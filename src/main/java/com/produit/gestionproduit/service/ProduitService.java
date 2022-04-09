@@ -1,9 +1,7 @@
 package com.produit.gestionproduit.service;
 
-import com.produit.gestionproduit.dto.ProduitRequestDTO;
-import com.produit.gestionproduit.dto.ProduitResponseDTO;
-
-
+import com.produit.gestionproduit.domain.dto.ProduitRequestDTO;
+import com.produit.gestionproduit.domain.dto.ProduitResponseDTO;
 
 import java.util.List;
 

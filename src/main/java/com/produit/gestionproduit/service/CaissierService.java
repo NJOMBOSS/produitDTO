@@ -1,8 +1,7 @@
 package com.produit.gestionproduit.service;
 
-import com.produit.gestionproduit.dto.CaissierRequestDTO;
-import com.produit.gestionproduit.dto.CaissierResponseDTO;
-import com.produit.gestionproduit.entities.Caissier;
+import com.produit.gestionproduit.domain.dto.CaissierRequestDTO;
+import com.produit.gestionproduit.domain.dto.CaissierResponseDTO;
 
 import java.util.List;
 

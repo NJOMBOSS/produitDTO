@@ -1,24 +1,7 @@
 package com.produit.gestionproduit;
 
-import com.produit.gestionproduit.dto.*;
-import com.produit.gestionproduit.entities.Categorie;
-import com.produit.gestionproduit.entities.Produit;
-import com.produit.gestionproduit.mappers.CategorieMapper;
-import com.produit.gestionproduit.repositories.CaissierRepository;
-import com.produit.gestionproduit.repositories.CategorieRepository;
-import com.produit.gestionproduit.repositories.ProduitRepository;
-import com.produit.gestionproduit.repositories.VenteRepository;
-import com.produit.gestionproduit.service.CaissierService;
-import com.produit.gestionproduit.service.CategorieService;
-import com.produit.gestionproduit.service.ProduitService;
-import com.produit.gestionproduit.service.VenteService;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import java.util.Date;
-import java.util.Optional;
 
 @SpringBootApplication
 public class GestionProduitDtoApplication {
@@ -27,7 +10,7 @@ public class GestionProduitDtoApplication {
 		SpringApplication.run(GestionProduitDtoApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	CommandLineRunner start(CaissierService caissierService, CategorieService categorieService,
 							ProduitService produitService, VenteService venteService,
 							CategorieRepository categorieRepository, ProduitRepository produitRepository,
@@ -78,8 +61,8 @@ public class GestionProduitDtoApplication {
 							ProduitRequestDTO.builder()
 								.nomP("Farine")
 								.description("Description")
-								.date_expiration(new Date())
-								.date_fabrication(new Date())
+								.dateExpiration(new Date())
+								.dateFabrication(new Date())
 								.quantite(100)
 								.ispromotion(true)
 								.categorie(categorie)
@@ -93,8 +76,8 @@ public class GestionProduitDtoApplication {
 						ProduitRequestDTO.builder()
 								.nomP("Savon")
 								.description("liquige")
-								.date_expiration(new Date())
-								.date_fabrication(new Date())
+								.dateExpiration(new Date())
+								.dateFabrication(new Date())
 								.quantite(80)
 								.ispromotion(false)
 								.categorie(categorie)
@@ -109,8 +92,8 @@ public class GestionProduitDtoApplication {
 						ProduitRequestDTO.builder()
 								.nomP("Cube")
 								.description("maggie")
-								.date_expiration(new Date())
-								.date_fabrication(new Date())
+								.dateExpiration(new Date())
+								.dateFabrication(new Date())
 								.quantite(80)
 								.ispromotion(false)
 								.categorie(categorie)
@@ -123,7 +106,7 @@ public class GestionProduitDtoApplication {
 				produitService.listProduit().forEach(prod -> {
 
 					System.out.println(prod.getNomP() + "  " + prod.getDescription() + " " +
-							prod.getDate_expiration() + "  " + prod.getDate_fabrication() + "  " + prod.getQuantite()
+							prod.getDateExpiration() + "  " + prod.getDateFabrication() + "  " + prod.getQuantite()
 							+ "  " + prod.isIspromotion() + "  " + prod.getCategorie().getIdCat());
 				});
 
@@ -199,6 +182,6 @@ public class GestionProduitDtoApplication {
 		};
 
 
-		};
+		};*/
 
 }

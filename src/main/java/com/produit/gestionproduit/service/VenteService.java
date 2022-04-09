@@ -1,8 +1,8 @@
 package com.produit.gestionproduit.service;
 
 
-import com.produit.gestionproduit.dto.VenteRequestDTO;
-import com.produit.gestionproduit.dto.VenteResponseDTO;
+import com.produit.gestionproduit.domain.dto.VenteRequestDTO;
+import com.produit.gestionproduit.domain.dto.VenteResponseDTO;
 
 import java.util.List;
 
